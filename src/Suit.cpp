@@ -1,4 +1,4 @@
-#include "headers/Suit.h"
+#include "../headers/Suit.h"
 
 std::ostream &operator<<(std::ostream &os, const Suit &suit)
 {

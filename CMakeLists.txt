@@ -3,6 +3,6 @@ project(BlackjackWithSmartPointers)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(BlackjackWithSmartPointers main.cpp headers/BlackjackGame.h
+add_executable(BlackjackWithSmartPointers src/main.cpp headers/BlackjackGame.h
         headers/Player.h headers/HumanPlayer.h headers/ComputerPlayer.h
-        headers/Deck.h Card.cpp headers/Card.h headers/Suit.h headers/Value.h BlackjackGame.cpp Deck.cpp ComputerPlayer.cpp HumanPlayer.cpp Player.cpp Value.cpp Suit.cpp)
+        headers/Deck.h src/Card.cpp headers/Card.h headers/Suit.h headers/Value.h src/BlackjackGame.cpp src/Deck.cpp src/ComputerPlayer.cpp src/HumanPlayer.cpp src/Player.cpp src/Value.cpp src/Suit.cpp)

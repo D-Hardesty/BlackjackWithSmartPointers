@@ -1,4 +1,4 @@
-#include "headers/Value.h"
+#include "../headers/Value.h"
 
 std::ostream& operator<<(std::ostream& os, const Value& value)
 {

@@ -1,4 +1,4 @@
-#include "headers/BlackjackGame.h"
+#include "../headers/BlackjackGame.h"
 #include <iostream>
 
 

@@ -1,4 +1,4 @@
-#include "headers/ComputerPlayer.h"
+#include "../headers/ComputerPlayer.h"
 
 bool ComputerPlayer::isHitting() const
 {

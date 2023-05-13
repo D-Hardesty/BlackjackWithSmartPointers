@@ -1,4 +1,4 @@
-#include "headers/Card.h"
+#include "../headers/Card.h"
 
 std::ostream &operator<<(std::ostream &os, const Card &card)
 {

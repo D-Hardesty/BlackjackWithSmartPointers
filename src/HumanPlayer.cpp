@@ -1,4 +1,4 @@
-#include "headers/HumanPlayer.h"
+#include "../headers/HumanPlayer.h"
 
 bool HumanPlayer::isHitting() const
 {
