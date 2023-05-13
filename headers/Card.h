@@ -1,6 +1,7 @@
 #ifndef BLACKJACKWITHSMARTPOINTERS_CARD_H
 #define BLACKJACKWITHSMARTPOINTERS_CARD_H
 
+#pragma once
 #include "Suit.h"
 #include "Value.h"
 #include <ostream>
@@ -26,6 +27,5 @@ private:
     Suit suit;
     Value value;
 };
-
 
 #endif //BLACKJACKWITHSMARTPOINTERS_CARD_H

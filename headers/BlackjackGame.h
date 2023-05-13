@@ -1,6 +1,7 @@
 #ifndef BLACKJACKWITHSMARTPOINTERS_BLACKJACKGAME_H
 #define BLACKJACKWITHSMARTPOINTERS_BLACKJACKGAME_H
 
+#pragma once
 #include "Deck.h"
 #include "HumanPlayer.h"
 #include "ComputerPlayer.h"

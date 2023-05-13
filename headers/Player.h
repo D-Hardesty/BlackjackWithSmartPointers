@@ -1,6 +1,7 @@
 #ifndef BLACKJACKWITHSMARTPOINTERS_PLAYER_H
 #define BLACKJACKWITHSMARTPOINTERS_PLAYER_H
 
+#pragma once
 #include "Card.h"
 #include <iostream>
 #include <vector>
@@ -22,7 +23,7 @@ public:
 
     void reset();
 
-    void showHand(bool showAllCards = true) const;
+    void showHand(bool showAllCards = true, bool isDealer = false) const;
 
     bool hasAce() const;
 

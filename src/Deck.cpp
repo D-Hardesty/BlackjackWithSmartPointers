@@ -35,3 +35,5 @@ const std::vector<Suit> suits{Suit::HEARTS, Suit::DIAMONDS, Suit::CLUBS, Suit::S
 const std::vector<Value> values{Value::ACE, Value::TWO, Value::THREE, Value::FOUR, Value::FIVE, Value::SIX,
                                 Value::SEVEN, Value::EIGHT, Value::NINE, Value::TEN, Value::JACK, Value::QUEEN,
                                 Value::KING};
+
+

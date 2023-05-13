@@ -1,8 +1,9 @@
 #ifndef BLACKJACKWITHSMARTPOINTERS_HUMANPLAYER_H
 #define BLACKJACKWITHSMARTPOINTERS_HUMANPLAYER_H
 
-#include <iostream>
+#pragma once
 
+#include <iostream>
 #include "Player.h"
 
 class HumanPlayer : public Player

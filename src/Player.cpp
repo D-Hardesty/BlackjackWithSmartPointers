@@ -28,9 +28,9 @@ void Player::reset()
     hand.clear();
 }
 
-void Player::showHand(bool showAllCards) const
+void Player::showHand(bool showAllCards, bool isDealer) const
 {
-    (showAllCards) ? std::cout << "Player's Hand: " : std::cout << "Dealer's Hand : ";
+    (!isDealer) ? std::cout << "Player's Hand: " : std::cout << "Dealer's Hand : ";
 
     for (size_t i = 0; i < hand.size(); i++)
     {

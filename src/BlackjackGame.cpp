@@ -1,6 +1,4 @@
 #include "../headers/BlackjackGame.h"
-#include <iostream>
-
 
 void BlackjackGame::play()
 {
@@ -35,7 +33,7 @@ void BlackjackGame::dealInitialCards()
 
 void BlackjackGame::showCards() const
 {
-    dealer.showHand(false);
+    dealer.showHand(false, true);
     player.showHand();
 }
 
@@ -58,7 +56,8 @@ void BlackjackGame::playDealerTurn()
     {
         dealer.addCard(deck.dealCard());
     }
-    dealer.showHand();
+    dealer.showHand(true, true);
+    player.showHand(true, false);
 }
 
 void BlackjackGame::showResult() const
