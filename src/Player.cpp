@@ -4,7 +4,7 @@ Player::Player() : score(0)
 {}
 
 Player::~Player()
-{}
+= default;
 
 void Player::addCard(Card *card)
 {
@@ -30,7 +30,8 @@ void Player::reset()
 
 void Player::showHand(bool showAllCards) const
 {
-    std::cout << "Player's Hand: ";
+    (showAllCards) ? std::cout << "Player's Hand: " : std::cout << "Dealer's Hand : ";
+
     for (size_t i = 0; i < hand.size(); i++)
     {
         if (i == 0 && !showAllCards)
@@ -45,7 +46,7 @@ void Player::showHand(bool showAllCards) const
             std::cout << ", ";
         }
     }
-    std::cout << " (" << score << ")" << std::endl;
+    (showAllCards) ? std::cout << " (" << score << ")" << std::endl : std::cout << " (?)" << std::endl;
 }
 
 bool Player::hasAce() const
