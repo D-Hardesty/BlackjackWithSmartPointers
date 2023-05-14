@@ -1,3 +1,4 @@
+#include <memory>
 #include "../headers/Player.h"
 
 Player::Player() : score(0)
@@ -6,10 +7,10 @@ Player::Player() : score(0)
 Player::~Player()
 = default;
 
-void Player::addCard(Card *card)
+void Player::addCard(std::unique_ptr<Card> card)
 {
-    hand.push_back(card);
-    score += card->getScore();
+    hand.emplace_back(std::move(card));
+    score += hand.back()->getScore();
     if (score > 21 && hasAce())
     {
         score -= 10;

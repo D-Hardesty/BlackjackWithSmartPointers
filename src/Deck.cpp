@@ -19,13 +19,13 @@ void Deck::shuffle()
     std::shuffle(cards.begin(), cards.end(), g);
 }
 
-Card *Deck::dealCard()
+std::unique_ptr<Card> Deck::dealCard()
 {
     if (cards.empty())
     {
         return nullptr;
     }
-    auto card = cards.back().get();
+    auto card = std::move(cards.back());
     cards.pop_back();
     return card;
 }
@@ -35,5 +35,3 @@ const std::vector<Suit> suits{Suit::HEARTS, Suit::DIAMONDS, Suit::CLUBS, Suit::S
 const std::vector<Value> values{Value::ACE, Value::TWO, Value::THREE, Value::FOUR, Value::FIVE, Value::SIX,
                                 Value::SEVEN, Value::EIGHT, Value::NINE, Value::TEN, Value::JACK, Value::QUEEN,
                                 Value::KING};
-
-

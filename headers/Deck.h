@@ -8,6 +8,7 @@
 #include <random>
 #include <algorithm>
 #include "Card.h"
+#include <iostream>
 
 class Deck
 {
@@ -16,7 +17,7 @@ public:
 
     void shuffle();
 
-    Card *dealCard();
+    std::unique_ptr<Card> dealCard();
 
 private:
     std::vector<std::unique_ptr<Card>> cards;

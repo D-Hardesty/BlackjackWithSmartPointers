@@ -5,6 +5,7 @@
 #include "Card.h"
 #include <iostream>
 #include <vector>
+#include <memory>
 
 class Player
 {
@@ -13,7 +14,7 @@ public:
 
     virtual ~Player();
 
-    void addCard(Card *card);
+    void addCard(std::unique_ptr<Card> card);
 
     virtual bool isHitting() const = 0;
 
@@ -28,7 +29,7 @@ public:
     bool hasAce() const;
 
 protected:
-    std::vector<Card *> hand;
+    std::vector<std::unique_ptr<Card>> hand;
     int score;
 };
 

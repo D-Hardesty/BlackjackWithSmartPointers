@@ -2,6 +2,7 @@
 #define BLACKJACKWITHSMARTPOINTERS_CARD_H
 
 #pragma once
+
 #include "Suit.h"
 #include "Value.h"
 #include <ostream>
